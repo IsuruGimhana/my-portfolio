@@ -33,31 +33,42 @@ It showcases my projects, skills, and contact information in a clean and respons
 
 ## Installation
 
-1. Clone the repository  
+1. Clone the repository
+
+```bash
 git clone https://github.com/IsuruGimhana/my-portfolio.git
-
+```
 2. Navigate into the project directory
+
+```bash
 cd my-portfolio
-
+```
 3. Install dependencies
+
+```bash
 npm install
-
+```
 4. Start the development server
-npm run dev
 
+```bash
+npm run dev
+```
 5. Open your browser at http://localhost:5173 (default Vite port)
 
 ---
 
 ## Folder Structure
 
+## Folder Structure
+```text
 my-portfolio/
 │── public/
 │── src/
-│   ├── assets/         
-│   ├── components/     
-│   ├── pages/         
-│   ├── styles/         
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
 │   └── App.jsx
 │── package.json
 │── README.md
+
