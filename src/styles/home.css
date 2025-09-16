@@ -1,0 +1,65 @@
+/* Home.css */
+
+/* Container styling */
+.hero-container {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #3A2D32, #DBB4AD);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Heading */
+.hero-container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Lead text */
+.hero-container p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+/* Buttons */
+.hero-buttons {
+  margin-bottom: 50px;
+}
+
+.hero-buttons .btn {
+  margin: 0 10px;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+/* Primary button hover */
+.hero-buttons .btn-primary:hover {
+  background-color: #ff4081;
+  border-color: #ff4081;
+  transform: translateY(-3px);
+}
+
+/* Outline button hover */
+.hero-buttons .btn-outline-primary:hover {
+  background-color: #fff;
+  color: #3A2D32;
+  transform: translateY(-3px);
+}
+
+/* Sections spacing */
+.hero-section {
+  padding: 20px 20px;
+}
+
+/* Profile wrapper */
+.profile-wrapper {
+  margin-bottom: 40px;
+}

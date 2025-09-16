@@ -1,0 +1,41 @@
+/* About.css */
+
+.about {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+/* Heading */
+.about h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #3A2D32; /* from your palette */
+  position: relative;
+}
+
+/* Underline effect */
+.about h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #D30C7B; /* highlight color */
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Paragraph */
+.about p {
+  color: #444;
+  margin: 0;
+  text-align: justify;
+}

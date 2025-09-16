@@ -1,0 +1,93 @@
+/* Projects.css */
+
+.projects-container {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+/* Section heading */
+.projects-container h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #3A2D32; /* from your palette */
+  position: relative;
+}
+
+.projects-container h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #D30C7B; /* accent color */
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Card styling */
+.project-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Image */
+.project-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Card body */
+.project-card .card-body {
+  padding: 20px;
+  background: #fff;
+}
+
+/* Title */
+.project-card .card-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #3A2D32;
+}
+
+/* Description */
+.project-card .card-text {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+  min-height: 60px;
+}
+
+/* Buttons wrapper */
+.project-card .d-flex {
+  gap: 10px;
+}
+
+/* GitHub button */
+.project-card .btn-dark {
+  background-color: #3A2D32;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.project-card .btn-dark:hover {
+  background-color: #5D2A42;
+}
+
+/* Live Demo button */
+.project-card .btn-primary {
+  background-color: #D30C7B;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.project-card .btn-primary:hover {
+  background-color: #A20A60;
+}
