@@ -8,7 +8,7 @@ It showcases my projects, skills, and contact information in a clean and respons
 ## Live Demo
 [View Live Demo](https://your-live-demo-link.com)  
 
-![Portfolio Screenshot](screenshot.png)  
+![Portfolio Screenshot](public/my-portfolio.png)
 
 ---
 
