@@ -1,6 +1,6 @@
 // src/components/ProjectCard.jsx
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import "../styles/Projects.css";
+import "../styles/projects.css";
 
 const projects = [
   {
