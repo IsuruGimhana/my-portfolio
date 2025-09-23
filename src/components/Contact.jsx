@@ -23,12 +23,13 @@ const Contact = ({ setToast }) => {
           setToast({ show: true, message: "Message sent successfully!", bg: "success" });
 
           e.target.reset();
-        },
-        (error) => {
-          console.error(error.text);
+           // Force an error for testing
+          // return Promise.reject(new Error("Test failure"));
+        })
+        .catch((error) => {
+          console.error(error);
           setToast({ show: true, message: "Failed to send message. Please try again.", bg: "danger" });
-        }
-      );
+        });
   };
 
   return (
