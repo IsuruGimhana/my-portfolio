@@ -1,4 +1,3 @@
-import profileImg from '../assets/profile.jpg';
 import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 
@@ -7,7 +6,7 @@ import '../styles/profile.css';
 const Profile = () => {
   return (
     <Container className="profile text-center">
-      <Image src={profileImg} alt="Profile" className="profile-img mb-4" roundedCircle />
+      <Image src="/profile.jpg" alt="Profile" className="profile-img mb-4" roundedCircle />
     </Container>
   );
 }

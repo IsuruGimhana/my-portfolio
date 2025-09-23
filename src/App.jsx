@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { Container } from 'react-bootstrap';
+import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -23,12 +22,6 @@ function App() {
           bg={toast.bg}
         />
       </div>
-      {/* <ToastMessage
-        show={toast.show}
-        onClose={() => setToast({ ...toast, show: false })}
-        message={toast.message}
-        bg={toast.bg}
-      /> */}
     </>
   );
 }

@@ -1,7 +1,7 @@
 /* Projects.css */
 
 .projects-container {
-  padding: 60px 20px;
+  padding: 60px;
   background: #f9f9f9;
 }
 
@@ -10,7 +10,7 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 40px;
-  color: #3A2D32; /* from your palette */
+  color: #3A2D32;
   position: relative;
 }
 
@@ -26,10 +26,13 @@
 
 /* Card styling */
 .project-card {
+  position: relative;
   border: none;
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 95%;
+  margin: auto;
 }
 
 .project-card:hover {
@@ -39,14 +42,32 @@
 
 /* Image */
 .project-card img {
-  height: 200px;
   object-fit: cover;
+  height: 250px;
 }
 
 /* Card body */
 .project-card .card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 20px;
   background: #fff;
+
+  /* Hide initially using transform & opacity */
+  transform: translateY(100%);
+  opacity: 0;
+
+  /* Smooth transition */
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* On hover, slide up and fade in */
+.project-card:hover .card-body {
+  transform: translateY(0);
+  opacity: 1;
+  border: 2px solid #D30C7B;
 }
 
 /* Title */
@@ -65,9 +86,11 @@
   min-height: 60px;
 }
 
-/* Buttons wrapper */
-.project-card .d-flex {
-  gap: 10px;
+/* Button container */
+.project-card .btn-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* GitHub button */
